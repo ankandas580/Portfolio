@@ -1,0 +1,278 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Ankan Das | Data Analyst Portfolio</title>
+
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+
+<style>
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:'Inter',sans-serif;
+}
+
+body{
+    background:#030617;
+    color:white;
+    overflow-x:hidden;
+}
+
+/* Background */
+
+body::before{
+    content:'';
+    position:fixed;
+    width:600px;
+    height:600px;
+    background:#6c63ff;
+    filter:blur(180px);
+    opacity:.20;
+    top:-150px;
+    right:-150px;
+    z-index:-2;
+}
+
+body::after{
+    content:'';
+    position:fixed;
+    width:500px;
+    height:500px;
+    background:#00d4ff;
+    filter:blur(180px);
+    opacity:.15;
+    bottom:-150px;
+    left:-150px;
+    z-index:-2;
+}
+
+/* Navbar */
+
+nav{
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    padding:25px 8%;
+}
+
+.logo{
+    font-size:1.3rem;
+    font-weight:700;
+}
+
+nav ul{
+    display:flex;
+    list-style:none;
+    gap:30px;
+}
+
+nav a{
+    text-decoration:none;
+    color:white;
+    opacity:.8;
+}
+
+nav a:hover{
+    opacity:1;
+}
+
+/* Hero */
+
+.hero{
+    min-height:85vh;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    text-align:center;
+    padding:0 20px;
+}
+
+.hero-content{
+    max-width:900px;
+}
+
+.badge{
+    display:inline-block;
+    padding:10px 18px;
+    border:1px solid rgba(255,255,255,.15);
+    border-radius:30px;
+    backdrop-filter:blur(20px);
+    background:rgba(255,255,255,.04);
+    margin-bottom:25px;
+}
+
+.hero h1{
+    font-size:4rem;
+    font-weight:800;
+    line-height:1.1;
+}
+
+.gradient{
+    background:linear-gradient(90deg,#7f7fff,#00d4ff);
+    -webkit-background-clip:text;
+    -webkit-text-fill-color:transparent;
+}
+
+.hero p{
+    margin-top:25px;
+    color:#c7c7d8;
+    font-size:1.15rem;
+    line-height:1.8;
+}
+
+.buttons{
+    margin-top:40px;
+    display:flex;
+    justify-content:center;
+    gap:20px;
+    flex-wrap:wrap;
+}
+
+.btn{
+    padding:14px 28px;
+    border-radius:14px;
+    text-decoration:none;
+    transition:.3s;
+}
+
+.primary{
+    background:linear-gradient(90deg,#6c63ff,#00d4ff);
+    color:white;
+}
+
+.secondary{
+    border:1px solid rgba(255,255,255,.15);
+    background:rgba(255,255,255,.05);
+    color:white;
+}
+
+.btn:hover{
+    transform:translateY(-3px);
+}
+
+/* Stats */
+
+.stats{
+    display:flex;
+    justify-content:center;
+    gap:25px;
+    flex-wrap:wrap;
+    margin-top:70px;
+}
+
+.stat-card{
+    width:220px;
+    padding:25px;
+    text-align:center;
+
+    background:rgba(255,255,255,.05);
+
+    backdrop-filter:blur(15px);
+
+    border:1px solid rgba(255,255,255,.08);
+
+    border-radius:18px;
+}
+
+.stat-card h2{
+    color:#7f7fff;
+    margin-bottom:8px;
+}
+
+.stat-card p{
+    font-size:.95rem;
+}
+
+@media(max-width:768px){
+
+.hero h1{
+    font-size:2.8rem;
+}
+
+nav ul{
+    display:none;
+}
+
+}
+
+</style>
+</head>
+
+<body>
+
+<nav>
+
+<div class="logo">ANKAN DAS</div>
+
+<ul>
+<li><a href="#">About</a></li>
+<li><a href="#">Skills</a></li>
+<li><a href="#">Projects</a></li>
+<li><a href="#">Contact</a></li>
+</ul>
+
+</nav>
+
+<section class="hero">
+
+<div class="hero-content">
+
+<div class="badge">
+📊 Aspiring Data Analyst
+</div>
+
+<h1>
+Transforming
+<span class="gradient">Data Into Insights</span>
+</h1>
+
+<p>
+Computer Science graduate pursuing a PG Diploma in
+Applied Data Science with Deep Learning.
+Passionate about Data Analysis, SQL, Power BI,
+Machine Learning, and creating impactful
+data-driven solutions.
+</p>
+
+<div class="buttons">
+
+<a href="#projects" class="btn primary">
+View Projects
+</a>
+
+<a href="Ankan_Das_Resume.pdf" class="btn secondary">
+Download Resume
+</a>
+
+</div>
+
+<div class="stats">
+
+<div class="stat-card">
+<h2>5+</h2>
+<p>Projects Completed</p>
+</div>
+
+<div class="stat-card">
+<h2>103K+</h2>
+<p>Records Analyzed</p>
+</div>
+
+<div class="stat-card">
+<h2>Python</h2>
+<p>SQL • Power BI • ML</p>
+</div>
+
+</div>
+
+</div>
+
+</section>
+
+</body>
+</html>
